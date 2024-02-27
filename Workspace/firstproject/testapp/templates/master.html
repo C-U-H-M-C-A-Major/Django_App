@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load testapp_tags %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p>{% today %}</p>
     {% block menu %}
     {% endblock %}
     {% block content %}
