@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            background-color: rgb(246, 236, 53);
+            padding: 2px;
+        }
+        #form
+        {
+            border: 2.5px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome Guyz... Enter your text below</h1>
+    <form action="/analyze" method="get" id="form">
+        <textarea name='text' style='margin: 0px; width: 1000px;px; height:225px;'></textarea><br>
+        <input type="checkbox" name="removepunc">Remove Punctuation <br>
+        <input type="checkbox" name="fullcaps">UPPERCASE<br>
+        <input type="checkbox" name="newlineremover">New Line Remover<br>
+        <input type="checkbox" name="smallcaps">lowercase<br>
+
+
+        <button type="submit">Analyze Text</button>
+    </form>
+</body>
+</html>
